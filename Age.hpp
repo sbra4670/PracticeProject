@@ -1,34 +1,15 @@
-#include <iostream>
-#include <String>
-
 #ifndef Age_hpp
 #define Age_hpp
 
+#include <iostream>
+#include <string>
+
 using namespace std;
 
-void Age()
+class AgeGroup
 {
- int input;
-
- cout << "Please Enter Your Age" << endl;
- cin >> input;
-
-    if (input < 18)
-    {
-        cout << "You are a Minor." << endl;
-    }
-     else if(input >= 65)
-    {
-        cout << "You are a Senior" << endl;
-    }
-    else if (input == 18)
-    {
-        cout << "You are an Adult" << endl;
-    }
-     else if (input < 65)
-    {
-        cout << "You are an Adult." << endl;
-    }  
-}
+  public:
+    void Start();
+};
 
 #endif
